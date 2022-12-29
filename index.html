@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Programación en JAVA tienda de café</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <div class="container-logo">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h1>TIENDA DE CAFÉ</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Tendencia</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Regalos</a></li>
+                    <li><a href="#">Coffe Rewards</a></li>
+                    <li><a href="#">Delivery</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar">
+            </div>
+        </header>
+        <!-- INFO -->
+        <div class="informacion">
+            <div class="fila">
+                <!-- Columna izquierda -->
+                <div class="col">
+                    <h2 id="nombre">Tumbler STANLEY</h2>
+                    <span id="precio">$1,779.00</span>
+                    <button>Comprar ahora <i class="fa-solid fa-circle-chevron-right"></i></button>
+                </div>
+                <!-- Columna central -->
+                <div class="col">
+                    <div class="circuito-principal" id="circulo">
+                        <img src="img/tumblerAcero.webp" alt="" id="fotoPrincipal">
+                    </div>
+                </div>
+                <!-- Columna derehca -->
+                <div class="col caracteristicas">
+                    <ul id="ingredientes">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                                Garantia de 1 año
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                                Agarradera de máximo confort
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                                Cierre hermetico
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                                Anti-Salpicaduras
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Hasta 8 horas caliente
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Hasta 12 hrs frío
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rectangulo">
+            <div class="opcion">
+                <div class="circulo color1" onclick="cargar(1)">
+                    <img src="img/macc.png" alt="">
+                    <div class="puntuacion">
+                        4.9<i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Caramel Macchiato</h3>
+                <a href="#">Agregar a la órden</a>
+            </div>
+            <div class="opcion"onclick="cargar(2)">
+                <div class="circulo color2">
+                    <img src="img/coldbrew.png" alt="">
+                    <div class="puntuacion">
+                        4.9<i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Cold Brew Cloud Foam</h3>
+                <a href="#">Agregar a la órden</a>
+            </div>
+            <div class="opcion" onclick="cargar(3)">
+                <div class="circulo color3">
+                    <img src="img/latte-art.webp" alt="">
+                    <div class="puntuacion">
+                        4.9<i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Latte - Art</h3>
+                <a href="#">Agregar a la órden</a>
+            </div>
+            <div class="opcion" onclick="cargar(4)">
+                <div class="circulo color4">
+                    <img src="img/iced.webp" alt="">
+                    <div class="puntuacion">
+                        4.9<i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Latte Helado</h3>
+                <a href="#">Agregar a la órden</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="java.js"></script>
+</html>
